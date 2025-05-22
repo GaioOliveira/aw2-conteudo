@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Kanban</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Meu Kanban</h1>
+    <form id="add-task-form">
+        <p>Crie uma nova tarefa:</p>
+        <input type="text" name="nova_tarefa" 
+        id="nova_tarefa" placeholder="Nome da nova tarefa">
+        <button type="submit">Criar</button>
+    </form>
+    <div class="kanban">
+        <div class="coluna">
+            <h2>To Do</h2>
+            <ul class="lista" id="todo">
+                <li draggable="true">Tarefa 5</li>
+                <li draggable="true">Tarefa 6</li>
+                <li draggable="true">Tarefa 7</li>
+            </ul>
+        </div>
+        <div class="coluna">
+            <h2>Doing</h2>
+            <ul class="lista" id="doing">
+                <li draggable="true">Tarefa 4</li>
+                <li draggable="true">Tarefa 3</li>
+            </ul>
+        </div>
+        <div class="coluna">
+            <h2>Done</h2>
+            <ul class="lista" id="done">
+                <li draggable="true">Tarefa 1</li>
+                <li draggable="true">Tarefa 2</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
